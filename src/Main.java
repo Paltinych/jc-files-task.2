@@ -1,11 +1,7 @@
 import java.io.*;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.util.Map;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
-import static java.util.Map.entry;
 
 public class Main {
     public static void main(String[] args) {
