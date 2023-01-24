@@ -46,7 +46,7 @@ public class Main {
                 try {
                     FileInputStream fis = new FileInputStream(save);
                     String[] s = save.split("/");   //  оставляем только имя архива,
-                    ZipEntry entry = new ZipEntry(s[3]);  //  без полного пути с папками
+                    ZipEntry entry = new ZipEntry(s[s.length - 1]);  //  без полного пути с папками
                     zout.putNextEntry(entry);
                     byte[] buffer = new byte[fis.available()];
                     fis.read(buffer);
